@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .memory-game {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .memory-card {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform: scale(1);
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .memory-card.flip {
+            transform: rotateY(180deg);
+        }
+
+        .front-face,
+        .back-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 5px;
+        }
+
+        .front-face {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            transform: rotateY(180deg);
+        }
+
+        .back-face {
+            background: #1c87c9;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="button"><img src="Images/logo.png" alt="Jazz Festival Logo"></a>
+            <h1>Jazz in the Park</h1>
+            <h2>June 20th, 2024 - A Day Filled with Smooth Sounds</h2>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="button"><strong>Home</strong></a></li>
+                    <li><a href="lineup.html" class="button"><strong>Line Up</strong></a></li>
+                    <li><a href="stages.html" class="button"><strong>Stages</strong></a></li>
+                    <li><a href="festival_info.html" class="button"><strong>Festival Info</strong></a></li>
+                    <li><a href="faq.html" class="button"><strong>FAQ</strong></a></li>
+                    <li><a href="contact.html" class="button"><strong>Contact</strong></a></li>
+                    <!-- <li><a href="memory-game.html" class="button"><strong>Memory Game</strong></a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="memory-game-title">Memory Game</h1>
+        <div class="memory-game">
+            <div class="memory-card" data-framework="a">
+                <div class="front-face">The Swinging Notes</div>
+                <div class="back-face">Reunite the band</div>
+            </div>
+            <div class="memory-card" data-framework="b">
+                <div class="front-face">Miles High Quartet</div>
+                <div class="back-face">Reunite the band</div>
+            </div>
+            <div class="memory-card" data-framework="a">
+                <div class="front-face">The Swinging Notes</div>
+                <div class="back-face">Reunite the band</div>
+            </div>
+            <div class="memory-card" data-framework="b">
+                <div class="front-face">Miles High Quartet</div>
+                <div class="back-face">Reunite the band</div>
+            </div>
+            <div class="memory-card" data-framework="c">
+                <div class="front-face">Blue Note Trio</div>
+                <div class="back-face">Reunite the band</div>
+            </div>
+            <div class="memory-card" data-framework="c">
+                <div class="front-face">Blue Note Trio</div>
+                <div class="back-face">Reunite the band</div>
+            </div>
+            <div class="memory-card" data-framework="d">
+                <div class="front-face">The Ellington Legacy</div>
+                <div class="back-face">Reunite the band</div>
+            </div>
+            <div class="memory-card" data-framework="d">
+                <div class="front-face">The Ellington Legacy</div>
+                <div class="back-face">Reunite the band</div>
+            </div>
+        </div>
+        <button id="play-again-button" class="play-again-button" onclick="startGame()">Play Again</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jazz in the Park</p>
+    </footer>
+
+    <script src="/memory-game.js"></script>
+</body>
+
+</html>

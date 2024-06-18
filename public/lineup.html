@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function toggleDescription(bandId) {
+      var description = document.getElementById(bandId);
+      if (description.style.display === "none") {
+        description.style.display = "block";
+      } else {
+        description.style.display = "none";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" class="button"><img src="Images/logo.png" alt="Jazz Festival Logo"></a>
+      <h1>Jazz in the Park</h1>
+      <h2>June 20th, 2024 - A Day Filled with Smooth Sounds</h2>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="button"><strong>Home</strong></a></li>
+          <li><a href="stages.html" class="button"><strong>Stages</strong></a></li>
+          <li><a href="festival_info.html" class="button"><strong>Festival Info</strong></a></li>
+          <li><a href="faq.html"><strong>FAQ</strong></a></li>
+          <li><a href="contact.html"><strong>Contact</strong></a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+
+  <section class="call-to-action">
+    <h2>Line Up</h2>
+  </section>
+  <br>
+
+  <section class="image-text-grid">
+    <div class="grid-item">
+      <img src="Images/jazz9.jpeg" alt="The Swinging Notes" class="grid-image">
+      <div class="text-container">
+        <h3>The Swinging Notes</h3>
+        <p>The Swinging Notes: More than just a name, it's a feeling. We're a passionate group of musicians dedicated to
+          keeping the spirit of swing alive. Expect toe-tapping classics, dazzling improvisations, and a whole lot of
+          fun!</p>
+        <p>Seasoned veterans of the jazz scene, The Swinging Notes bring a wealth of experience and musical expertise to
+          every stage. We weave together timeless melodies with modern influences, creating a sound that's both
+          nostalgic and fresh.</p>
+        <p>The Swinging Notes: Injecting infectious energy and classic cool into every performance. Get ready to tap
+          your feet and move to the groove!</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="Images/marching-band-7329270_1280.jpg" alt="Miles High Quartet" class="grid-image">
+      <div class="text-container">
+        <h3>Miles High Quartet</h3>
+        <p>Hailing from New York, the Miles High Quartet takes listeners on a captivating journey through the world of
+          jazz. This tight-knit ensemble, comprised of seasoned musicians with a deep love for the genre, blends
+          tradition with modern influences to create a truly unique sound.</p>
+        <p>Witnessing the Miles High Quartet live is an unforgettable experience. Their energy and passion are
+          contagious, and their improvisational skills are second to none. Each performance is a unique adventure, a
+          testament to the power of spontaneous creativity in jazz.</p>
+        <p>Get ready to be swept away by the soaring improvisations and infectious energy of the Miles High Quartet!</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="Images/jazz11.jpeg" alt="Blue Note Trio" class="grid-image">
+      <div class="text-container">
+        <h3>Blue Note Trio</h3>
+        <p>The Blue Note Trio is a tight-knit ensemble that breathes new life into the timeless sounds of classic jazz.
+          Influenced by the legendary artists who frequented the iconic Blue Note record label, this trio delivers a
+          captivating blend of swing, bop, and cool jazz with a touch of modern flair.</p>
+        <p>The Blue Note Trio's repertoire includes beloved jazz standards reimagined with a fresh perspective. They
+          also incorporate lesser-known gems, uncovering hidden treasures from the vast landscape of jazz history.
+          Expect to hear familiar tunes you love, alongside exciting improvisational journeys that will keep you on the
+          edge of your seat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-text-grid">
+    <h3>Band Descriptions</h3>
+    <button class="band-button" onclick="toggleDescription('blue-note')"><strong>The Blue Note
+        Architects</strong></button>
+    <div id="blue-note" class="band-description">
+      This seasoned ensemble brings the spirit of the iconic Blue Note jazz club to life, meticulously crafting timeless
+      melodies with virtuosic improvisation.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('ellington-legacy')"><strong>The Ellington
+        Legacy</strong></button>
+    <div id="ellington-legacy" class="band-description">
+      Carrying the torch of the legendary Duke Ellington, this band reimagines his groundbreaking compositions with
+      fresh energy and a deep respect for tradition.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('midnight-standards')"><strong>The Midnight
+        Standards</strong></button>
+    <div id="midnight-standards" class="band-description">
+      Step back in time with these masters of elegance. Expect a captivating set of classic jazz standards delivered
+      with unparalleled smoothness and sophistication.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('nu-tet')"><strong>The Nu-tet</strong></button>
+    <div id="nu-tet" class="band-description">
+      This innovative quintet pushes the boundaries of jazz with their electrifying blend of tradition and fresh sonic
+      exploration. Prepare to be surprised and delighted.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('improv-syndicate')"><strong>Improv
+        Syndicate</strong></button>
+    <div id="improv-syndicate" class="band-description">
+      Witness the next generation of improvisational masters at work. This band thrives on spontaneous creation, weaving
+      intricate musical conversations in real-time.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('next-collective')"><strong>The Next
+        Collective</strong></button>
+    <div id="next-collective" class="band-description">
+      A collaborative force to be reckoned with, this group features rising stars who combine their unique voices to
+      create a truly dynamic and forward-thinking sound.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('whispering-pines')"><strong>Whispering
+        Pines</strong></button>
+    <div id="whispering-pines" class="band-description">
+      Imagine gentle breezes swaying through a pine forest as this band serenades you with calming melodies and soothing
+      rhythms. Perfect for unwinding and letting the worries of the day melt away.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('sunset-trio')"><strong>The Sunset Trio</strong></button>
+    <div id="sunset-trio" class="band-description">
+      This intimate trio creates a warm and mellow atmosphere, perfect for enjoying a quiet conversation or simply
+      getting lost in the beauty of the music.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('bossa-nova-breeze')"><strong>Bossa Nova
+        Breeze</strong></button>
+    <div id="bossa-nova-breeze" class="band-description">
+      Let the cool rhythms and subtle vocals of Bossa Nova whisk you away to a state of pure relaxation. This band is
+      the soundtrack to a perfect summer evening.
+    </div>
+
+    <button class="band-button" onclick="toggleDescription('harmony-vibes')"><strong>Harmony Vibes</strong></button>
+    <div id="harmony-vibes" class="band-description">
+      Experience the perfect blend of classic and contemporary jazz with Harmony Vibes, a band known for their
+      captivating performances and soulful melodies.
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jazz in the Park</p>
+  </footer>
+</body>
+
+</html>

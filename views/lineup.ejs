@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineup</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="button"><img src="Images/logo.png" alt="Jazz'A'Bella Logo" class="logo"></a>
+            <h1>Jazz in the Park</h1>
+            <h2>June 20th, 2024 - A Day Filled with Smooth Sounds</h2>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" class="button"><strong>Home</strong></a></li>
+                <li><a href="lineup.html" class="button"><strong>Line Up</strong></a></li>
+                <li><a href="stages.html" class="button"><strong>Stages</strong></a></li>
+                <li><a href="festival_info.html" class="button"><strong>Festival Info</strong></a></li>
+                <li><a href="faq.html" class="button"><strong>FAQ</strong></a></li>
+                <li><a href="contact.html" class="button"><strong>Contact</strong></a></li>
+                <li><a href="memory-game.html" class="button"><strong>Memory Game</strong></a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" id="search-bar" class="search-input" placeholder="Search for artists...">
+            <button class="search-button" onclick="searchArtist()">Search</button>
+        </div>
+    </header>
+
+    <h1>Festival Lineup</h1>
+    <div id="results">
+        <% stages.forEach(stage => { %>
+            <h2><%= stage.stage %></h2>
+            <ul>
+                <% stage.lineup.forEach(artist => { %>
+                    <li><%= artist.artist %> - <%= artist.time %></li>
+                <% }) %>
+            </ul>
+        <% }) %>
+    </div>
+
+    <script src="/search.js"></script>
+</body>
+
+</html>

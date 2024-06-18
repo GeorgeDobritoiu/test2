@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jazz in the Park - June 20th, 2024</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <!-- <img src="Images/logo.png" alt="Jazz'A'Bella Logo" class="logo"> -->
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="Images/The-Swinging-Notes.jpg" alt="banner 1" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="Images/audience.jpg" alt="banner 2" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Images/Miles-High-Quartet.jpg" alt="banner 3" style="width:100%">
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <h1>Jazz in the Park</h1>
+    <h2>June 20th, 2024 - A Day Filled with Smooth Sounds</h2>
+    <br>
+
+    <nav>
+      <ul>
+        <li><a href="lineup.html" class="button"><strong>Line Up</strong></a></li>
+        <li><a href="stages.html" class="button"><strong>Stages</strong></a></li>
+        <li><a href="festival_info.html" class="button"><strong>Festival Info</strong></a></li>
+        <li><a href="faq.html"><strong>FAQ</strong></a></li>
+        <li><a href="contact.html"><strong>Contact</strong></a></li>
+        <li><a href="memory-game.html" class="button memory-game-button"><strong>Memory Game</strong></a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-bar" class="search-input" placeholder="Search for artists...">
+      <button class="search-button" onclick="searchArtist()">Search <br>the band</button>
+    </div>
+  </header>
+
+  <section id="search-results" class="content">
+    <!-- <h3>Search Results</h3> -->
+    <div id="results"></div>
+  </section>
+
+  <section class="content">
+    <div class="content-item">
+      <img src="Images/jazz11.jpeg" alt="Jazz Festival Image" class="festival-image">
+      <div class="text-container">
+        <h2>Headlining the First Note: Welcome to Jazz'a'Bella!</h2>
+        <p>Experience a Day Filled with Unforgettable Jazz:</p>
+        <p>Get ready to immerse yourself in the world of captivating melodies and rhythmic grooves at the inaugural
+          Jazz'a'Bella festival! This one-day event, meticulously crafted by a team boasting 20 years of festival
+          expertise, promises an unforgettable journey through the heart of jazz music.</p>
+      </div>
+    </div>
+    <div class="content-item reverse">
+      <div class="text-container">
+        <h2>Three Stages, Endless Possibilities:</h2>
+        <p>Immerse yourself in a vibrant atmosphere with music erupting from three distinct stages, each showcasing a
+          unique selection of genres within the vast jazz landscape. From the electrifying energy of swing to the
+          soulful tones of contemporary jazz, Jazz'a'Bella caters to every jazz enthusiast's taste.</p>
+      </div>
+      <img src="Images/DC-JazzFest.jpg" alt="Jazz Festival Image" class="festival-image">
+    </div>
+    <div class="content-item">
+      <img src="Images/music-656730_1280.jpg" alt="Jazz Festival Image" class="festival-image">
+      <div class="text-container">
+        <h2>13 Bands, One Unforgettable Day</h2>
+        <p>Prepare to be enthralled by the talent of 13 exceptional bands gracing our stages. Witness the magic unfold
+          as renowned artists and rising stars alike captivate the audience with their musical prowess.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <h3 class="section-title">More Than Just Music, A Festival for All:</h3>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="Images/foodtruck.jpg" alt="Food Truck" class="grid-image">
+        <p>Indulge in delectable treats from our diverse food court, offering a variety of culinary options to tantalize
+          your taste buds.</p>
+      </div>
+      <div class="grid-item">
+        <img src="Images/play-area.jpg" alt="Kids Area" class="grid-image">
+        <p>We haven't forgotten the little ones either! A dedicated kid's area provides a haven for fun activities,
+          ensuring a day of entertainment for the whole family.</p>
+      </div>
+      <div class="grid-item">
+        <img src="Images/dog-friendly.jpg" alt="Pets Welcome" class="grid-image">
+        <p>Bring along your furry companion! Jazz'a'Bella welcomes well-behaved pets on leashes to share in the festival
+          spirit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="call-to-action">
+    <h2>Join Us for the Premiere:</h2>
+    <p>Mark your calendars and prepare to be swept away by the magic of Jazz'a'Bella! This inaugural event
+      promises an unparalleled celebration of jazz music, leaving you wanting more.</p>
+
+    <p>Visit our website for updates on the performing artists, festival schedule, and ticketing information.
+      Don't miss your chance to be a part of this historic event!</p>
+  </section>
+
+
+
+  <footer>
+    <p>&copy; 2024 Jazz in the Park</p>
+  </footer>
+
+  <script src="search.js"></script>
+</body>
+
+</html>

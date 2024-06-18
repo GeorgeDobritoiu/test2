@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="Index.html" class="button"><img src="Images/logo.png" alt="Jazz Festival Logo"></a>
+      <h1>Jazz in the Park</h1>
+      <h2>June 20th, 2024 - A Day Filled with Smooth Sounds</h2>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="Index.html" class="button"><strong>Home</strong></a></li>
+          <li><a href="lineup.html" class="button"><strong>Line Up</strong></a></li>
+          <li><a href="stages.html" class="button"><strong>Stages</strong></a></li>
+          <li><a href="festival_info.html" class="button"><strong>Festival Info</strong></a></li>
+          <li><a href="faq.html"><strong>FAQ</strong></a></li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <form action="/submit-contact" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Submit</button>
+  </form>
+    <button onclick="location.href='index.html'" class="home-button">Return to Home</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Jazz in the Park</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
